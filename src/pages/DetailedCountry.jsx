@@ -3,7 +3,7 @@ import { fetchCountryByCode } from "../api/restApi";
 
 const NeighboringCountry = ({ neighbor, onClick }) => (
   <div
-    className="border rounded-md p-2 cursor-pointer"
+    className="border-2 dark:border-gray-500 dark:text-gray-400 rounded-md p-2 cursor-pointer"
     onClick={() => onClick(neighbor.cca3)}
   >
     {neighbor.name.common}
@@ -66,7 +66,7 @@ const DetailedCountry = ({ country, onBack, updateSelectedCountry }) => {
     <div className="min-h-screen dark:bg-slate-800">
       <button
         onClick={handleBackButton}
-        className="text-black dark:text-dark-gray-input mt-5 ml-10 text-xs border p-2 dark:border-white-300 rounded-md"
+        className="text-black dark:text-gray-400  mt-5 ml-10 text-xs border p-2 dark:border-white-300 rounded-md"
       >
         Back to Country List
       </button>
